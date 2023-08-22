@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "natural_discovery",
+  "version": "${version}",
+  "name": "Natural Discovery",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/bggh234/Natural-Discovery"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/natural_discovery/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.bggh234.natural_discovery.natural_discovery.client.NaturalDiscoveryClient"
+    ],
+    "main": [
+      "com.bggh234.natural_discovery.natural_discovery.NaturalDiscovery"
+    ]
+  },
+  "mixins": [
+    "natural_discovery.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
